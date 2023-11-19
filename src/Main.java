@@ -15,7 +15,7 @@ public class Main {
         server.createContext("/storeQuestion", new StoreQuestionHandler());
         server.start();
     }
-
+    //Stores a question in a textfile. Input from user is stored.
     static class StoreQuestionHandler implements HttpHandler {
         @Override
         public void handle(HttpExchange exchange) throws IOException {
